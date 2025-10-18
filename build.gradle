@@ -20,17 +20,20 @@ afterEvaluate {
 	sourceSets {
 		main {
 			java {
-				srcDirs += ['build/generated/source/proto/main/java',
-							'build/generated/source/proto/main/grpc']
+				def mainProtoDir = 'build/generated/source/proto/main/java'
+				def mainGrpcDir = 'build/generated/source/proto/main/grpc'
+				if (!file(mainProtoDir).exists()) srcDirs += mainProtoDir
+				if (!file(mainGrpcDir).exists()) srcDirs += mainGrpcDir
 			}
 		}
 		client {
 			java {
-				srcDirs += ['build/generated/source/proto/client/java',
-							'build/generated/source/proto/client/grpc']
+				def clientProtoDir = 'build/generated/source/proto/client/java'
+				def clientGrpcDir = 'build/generated/source/proto/client/grpc'
+				if (!file(clientProtoDir).exists()) srcDirs += clientProtoDir
+				if (!file(clientGrpcDir).exists()) srcDirs += clientGrpcDir
 			}
 		}
-
 	}
 }
 
