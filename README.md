@@ -4,7 +4,7 @@ use "R" keybind (by default) to open screen from which you can send message to s
 
 use docker compose file to deploy your PostgresSQL server
 
-once mod is launched, it will generate config file, in which you can specify your own info and credential for your database
+once mod is launched, it will generate config file, in which you can specify your own info and credentials for your database
 
 by default, credentials in docker-compose and default config values match
 
