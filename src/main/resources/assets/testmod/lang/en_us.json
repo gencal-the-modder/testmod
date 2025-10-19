@@ -1,0 +1,6 @@
+{
+  "string.testmod.sendmessage": "->",
+  "string.testmod.messagefield": "Message goes here",
+  "key.testmod.open_screen": "Keys that opens message screen",
+  "category.testmod.main": "Test Mod"
+}

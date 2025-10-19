@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_package = "com.gencal.testmod.network";
+option java_outer_classname = "MessagePacketProtos";
+
+service MessageService {
+  rpc SendMessage (Message) returns (EmptyResponse);
+}
+
+message EmptyResponse {}
+
+message Message {
+  string uuid = 1;
+  string message = 2;
+}
